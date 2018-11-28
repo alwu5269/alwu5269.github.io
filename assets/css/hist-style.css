@@ -1,0 +1,93 @@
+body {
+    background-color: #efefef;
+    font-family: 'Avenir';
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+#circle {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clickable-logo {
+    text-decoration: none;
+}
+
+#links {
+    position: fixed;
+}
+
+#links a {
+    font-family: 'Impact';
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #efefef;
+    border-radius: 15px;
+    border: 2px solid #5c5c5c;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#links a:hover {
+    left: -20px;
+}
+
+#homenav {
+    top: 20px;
+    background-color: #a9a9a9;
+}
+
+#resume {
+    border: 2px solid #a9a9a9;
+    border-radius: 10px;
+    background-color: #ff3b3f;
+    padding: 0px 30px;
+    height: 30px;
+}
+
+#resume a {
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+}
+
+.typed {
+    font-family: 'Impact';
+    font-size: 125pt;
+    margin: 10px 10px 100px 10px;
+    position: relative;
+    left: 120px;
+    display: flex;
+    min-height: 406px;
+    max-width: 90%;
+    color: #a9a9a9;
+}
+
+#content img {
+    width: 800px;
+    height: 500px;
+}
+
+#info {
+    text-align: center;
+}

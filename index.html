@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alice Wu</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/index-style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div class="sidenav">
+                <div id="links">
+                    <a href="#About" class="nav" id="aboutnav">About</a>
+                    <a href="#projects" class="nav" id="projectsnav">Projects</a>
+                    <a href="#contact" class="nav" id="contactnav">Contact</a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html" id="clickable-logo"> <div id="circle">AW</div> </a>
+            </div>
+
+            <form method="get" action="assets/img/Cal.png">
+                <button id="resume"><a href="#"> Resume </a></button>
+            </form>
+        </div>
+
+        <div id="About" name="my-bookmark">
+            <h1 class="typed" id="Greeting"></h1>
+
+            <div id="intro">
+                <p>
+                    My name is Alice Wu.<br />
+                    I am currently a sophomore at UC Berkeley. I plan to major in Computer Science.
+                    I love to create, code, and design. It is always inspiring to see what I and
+                    many others can make. Beyond my academic and professional interests, I also love
+                    cats, music, and food.
+                </p>
+            </div>
+
+            <br /><br /><br /><br />
+
+            <div id="comp">
+                <div id="charger"></div>
+                <img class="active" id="comp1" src="assets/img/OffComputer.png" />
+                <img class="notactive" id="comp2" src="assets/img/OnComputer.png" />
+                <img class="notactive" id="comp3" src="assets/img/eyes.png" />
+                <img class="notactive" id="comp4" src="assets/img/fullSmiley.png" />
+            </div>
+        </div>
+
+        <div id="projects">
+            <h1 class="typed" id="projtitle" style="margin-bottom: 40px;"></h1>
+
+            <div id="slideshow-container">
+                <div class="shown slide" id="slide1">
+                    <a href="#"><div class="overlay"></div></a>
+                    <h3>UC Admissions Analyzation</h3>
+                    <img src="assets/img/analysis2.jpg" />
+                    <p>
+                        Analyzed UC Admissions data, specifically looking at trends within
+                        ethnicity, geographical location, and more.
+                    </p>
+                </div>
+                <div class="not_shown slide" id="slide2">
+                    <a href="#"><div class="overlay"></div></a>
+                    <h3>Dynamic History Website</h3>
+                    <img src="assets/img/design.jpg" />
+                    <p>
+                        Created a dynamic history website for AFX, the largest dance organization at
+                        Berkeley.
+                    </p>
+                </div>
+                <div class="not_shown slide" id="slide3">
+                    <a href="#"><div class="overlay"></div></a>
+                    <h3>2-D Tile-based Game</h3>
+                    <img src="assets/img/game.jpg" />
+                    <p>Created a 2-D Tile-based game utilizing Java.</p>
+                </div>
+            </div>
+
+            <div id="line"></div>
+            <div id="dots">
+                <span class="dot chosen" id="dot1"></span>
+                <span class="dot not_chosen" id="dot2"></span>
+                <span class="dot not_chosen" id="dot3"></span>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1 class="typed" id="contact-title"></h1>
+
+            <div id="icon-content">
+                <a href="https://www.linkedin.com/in/alice-wu-7a3642155/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/alwu5269"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100004189680127">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <div id="email">
+                    <i class="fas fa-envelope-square"></i>
+                    <span class="notifytext" id="notify">Email copied to clipbooard</span>
+                    <input
+                        style=" opacity: 0; position: absolute;"
+                        id="gmail"
+                        type="text"
+                        value="alwu5269@berkeley.edu"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/index-script.js"></script>
+</html>

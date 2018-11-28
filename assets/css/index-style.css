@@ -1,0 +1,303 @@
+body {
+    background-color: #efefef;
+    font-family: 'Avenir';
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+#circle {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clickable-logo {
+    text-decoration: none;
+}
+
+#links {
+    position: fixed;
+}
+
+#links a {
+    font-family: 'Impact';
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #efefef;
+    border-radius: 15px;
+    border: 2px solid #5c5c5c;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#links a:hover {
+    left: -20px;
+}
+
+#aboutnav {
+    top: 20px;
+    background-color: #a9a9a9;
+}
+
+#projectsnav {
+    top: 90px;
+    background-color: #a9a9a9;
+}
+
+#contactnav {
+    top: 160px;
+    background-color: #a9a9a9;
+}
+
+#resume {
+    border: 2px solid #a9a9a9;
+    border-radius: 10px;
+    background-color: #ff3b3f;
+    padding: 0px 30px;
+    height: 30px;
+}
+
+#resume a {
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+}
+
+#closebtn {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#About {
+    text-align: center;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.typed {
+    font-family: 'Impact';
+    font-size: 125pt;
+    margin: 10px 10px 100px 10px;
+    position: relative;
+    left: 120px;
+    display: flex;
+    min-height: 203px;
+    max-width: 90%;
+}
+
+#About h1,
+#contact-title {
+    color: #a9a9a9;
+}
+
+#projects h1 {
+    color: #efefef;
+}
+
+#intro {
+    position: relative;
+    top: -40px;
+    text-align: center;
+    padding: 0 150px;
+}
+
+#About p {
+    background-color: rgba(202, 235, 242, 0.705);
+    color: #5c5c5c;
+    position: relative;
+    display: inline;
+    font-size: 25pt;
+    min-width: 300px;
+}
+
+#comp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 100px;
+}
+
+.notactive {
+    display: none;
+}
+
+.active {
+    position: relative;
+    left: 60%;
+}
+
+#charger {
+    background-color: silver;
+    height: 5px;
+    min-width: 5px;
+    position: absolute;
+    top: 161px;
+}
+
+#projects {
+    background: #a9a9a9;
+}
+
+#contact,
+#projects,
+#About {
+    margin-bottom: 120px;
+}
+
+#contact {
+    position: relative;
+    top: -50px;
+}
+
+#icon-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-content i {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 70px;
+    color: #ff3b3f;
+}
+
+#icon-content i:hover,
+#resume:hover {
+    color: #ca3133;
+}
+
+#email {
+    cursor: pointer;
+}
+
+#gmail {
+    position: absolute;
+    left: -9999px;
+}
+
+#email .notifytext {
+    display: none;
+    background-color: #a9a9a9;
+    color: #efefef;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 4px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background-color: #efefef;
+    border-radius: 50%;
+    border: 5px solid #efefef;
+    transition: background-color 0.6s ease;
+    margin-bottom: 120px;
+    z-index: 1;
+}
+
+.dot:hover,
+.chosen {
+    background-color: #ff3b3f;
+}
+
+#dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#line {
+    width: 76%;
+    background-color: #efefef;
+    height: 5px;
+    position: relative;
+    left: 12%;
+    top: 21px;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+.slide {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+#slideshow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.overlay {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    background-color: rgba(202, 235, 242, 0.705);
+    margin-top: 4px;
+}
+
+.not_shown {
+    display: none;
+}
+
+.slide h3 {
+    position: relative;
+    top: 60px;
+    width: 800px;
+    text-align: center;
+}
+
+.slide .overlay {
+    cursor: pointer;
+}
+
+.slide a {
+    position: relative;
+    left: -400px;
+    top: 59px;
+}
+
+.slide p {
+    position: relative;
+    top: -50px;
+}
